@@ -1,0 +1,17 @@
+<resources>
+
+    <!--
+        Base application theme for API 14+. This theme completely replaces
+        AppBaseTheme from BOTH res/values/styles.xml and
+        res/values-v11/styles.xml on API 14+ devices.
+    -->
+    <style name="AppBaseTheme" parent="android:Theme.Holo.Light.DarkActionBar">
+        <item name="android:actionOverflowButtonStyle">@style/OverFlowButtonStyle</item>
+    </style>
+
+    <!-- 设置overflowbutton的图标样式 -->
+    <style  name="OverFlowButtonStyle">
+        <item name="android:src">@drawable/overflowbutton</item>
+    </style>
+
+</resources>

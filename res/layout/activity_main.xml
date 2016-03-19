@@ -1,0 +1,67 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:wechat="http://schemas.android.com/apk/res/com.coco.wechat"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.coco.wechat.MainActivity" >
+
+    <LinearLayout
+        android:id="@+id/tab_container"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/tab_bg"
+        android:orientation="horizontal" >
+
+        <com.coco.wechat.ChangeColorIconWithText
+            android:id="@+id/id_indicator_one"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:padding="5dp"
+            wechat:icon="@drawable/ic_menu_allfriends"
+            wechat:text="@string/app_name"
+            wechat:textSize="12sp"
+            wechat:color="#ff45c01a" />
+
+        <com.coco.wechat.ChangeColorIconWithText
+            android:id="@+id/id_indicator_two"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:padding="5dp"
+            wechat:icon="@drawable/ic_menu_friendslist"
+            wechat:text="@string/tab_contact"
+            wechat:textSize="12sp"
+            wechat:color="#ff45c01a" />
+
+        <com.coco.wechat.ChangeColorIconWithText
+            android:id="@+id/id_indicator_three"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:padding="5dp"
+            wechat:icon="@drawable/ic_menu_emoticons"
+            wechat:text="@string/tab_found"
+            wechat:textSize="12sp"
+            wechat:color="#ff45c01a" />
+
+        <com.coco.wechat.ChangeColorIconWithText
+            android:id="@+id/id_indicator_four"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:padding="5dp"
+            wechat:icon="@drawable/ic_menu_allfriends"
+            wechat:text="@string/tab_me"
+            wechat:textSize="12sp"
+            wechat:color="#ff45c01a" />
+    </LinearLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/tab_container" />
+
+</RelativeLayout>
